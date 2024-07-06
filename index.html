@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="./scripts/script.js" defer></script>
     <!-- counter 필수 플러그인 -->
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     <!-- scrollbar slide 필수 플러그인-->
@@ -16,17 +17,95 @@
 <body>
     <header>
         <div class="tab">
-            <a href="#">ABOUT</a>
+            <a href="./about.html">ABOUT</a>
             <a href="#">BEST</a>
-            <a href="#">PRODUCT</a>
+            <a href="#" class="product">PRODUCT</a>
             <a href="#">SHOPPING STORY</a>
         </div>
-        <h1><a href="#"><img src="./images/logo.png" alt="스토케"></a></h1>
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="스토케"></a></h1>
         <div class="icons">
             <a href="#"><img src="./images/icon_search.svg" alt="검색하기"></a>
             <a href="#"><img src="./images/icon_notifications.svg" alt="알림"></a>
             <a href="#"><img src="./images/icon_person.svg" alt="마이페이지"></a>
             <a href="#"><img src="./images/icon_shopping_bag.svg" alt="장바구니"></a>
+        </div>
+        <div class="menu">
+            <ul class="gnb">
+                <li><a href="./product.html">하이체어</a></li>
+                <li><a href="./product.html">유모차 / 카시트</a></li>
+                <li><a href="./product.html">침대 / 체인저</a></li>
+                <li><a href="./product.html">욕조</a></li>
+                <li><a href="./product.html">아기띠</a></li>
+                <li><a href="./product.html">뮤테이블 시리즈</a></li>
+                <li><a href="./product.html">액세서리</a></li>
+                <li><a href="./product.html">여행용 제품</a></li>
+            </ul>
+            <ul class="sub">
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">트립트랩</a></li>
+                        <li><a href="#">노미</a></li>
+                        <li><a href="#">스텝스</a></li>
+                        <li><a href="#">클릭</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">요요 0+</a></li>
+                        <li><a href="#">요요 6+</a></li>
+                        <li><a href="#">요요 봉쁘앙</a></li>
+                        <li><a href="#">익스플로리 엑스</a></li>
+                        <li><a href="#">익스플로리 엑스 캐리콧</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">스누지 배시넷</a></li>
+                        <li><a href="#">슬리피 침대</a></li>
+                        <li><a href="#">클라우드 슬리퍼</a></li>
+                        <li><a href="#">체인저</a></li>
+                        <li><a href="#">드레서 / 체인저</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">플렉시바스 (64cm)</a></li>
+                        <li><a href="#">플렉시바스 라지 (80cm)</a></li>
+                        <li><a href="#">플렉시바스 스탠드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">리마스 (3.2~15kg)</a></li>
+                        <li><a href="#">리마스 플렉스 (4~20kg)</a></li>
+                        <li><a href="#">리마스 매쉬 (4~15kg)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">놀이테이블</a></li>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">게임 / 장난감</a></li>
+                        <li><a href="#">수납 / 커버</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">하이체어</a></li>
+                        <li><a href="#">유모차 / 카시트</a></li>
+                        <li><a href="#">아이방</a></li>
+                        <li><a href="#">뮤테이블</a></li>
+                        <li><a href="#">욕조</a></li>
+                        <li><a href="#">슬리피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub_detail">
+                        <li><a href="#">젯키즈 배드박스 캐리어</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -344,6 +423,7 @@
                             </a>
                         </div>
                     </div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
@@ -474,6 +554,15 @@
 
         const el = document.querySelector( '.counter' )
         IO.observe( el )
+        /* part3_slide */
+        var part3_slide = new Swiper('.part3_slide', {
+            autoplay:{delay:0}, //자동재생
+            loop:true, //무한반복
+            slidesPerView:4, //한번에 보이는 슬라이드 개수
+            spaceBetween: 120, //슬라이드 간 간격
+            freeMode: true,
+            speed:7000,
+        });
         /* part4_slide */
         var part4_slide = new Swiper('.part4_slide', {
             autoplay:{delay:3000}, //자동재생
@@ -485,22 +574,24 @@
                 hide: false,
             },
         });
-        /* part3_slide */
-        var part3_slide = new Swiper('.part3_slide', {
-            autoplay:{delay:0}, //자동재생
-            loop:true, //무한반복
-            slidesPerView:4, //한번에 보이는 슬라이드 개수
-            spaceBetween: 120, //슬라이드 간 간격
-            freeMode: true,
-            speed:7000,
-        });
         /* part5_slide */
-        var swiper = new Swiper(".part5_slide", {
+        var part5_slide = new Swiper(".part5_slide", {
             navigation: {
                 nextEl: ".part5_slide .swiper-button-next",
                 prevEl: ".part5_slide .swiper-button-prev",
             },
-    });
+        });
+        var part5_pdt_slide = new Swiper(".part5_pdt_slide", {
+            autoplay:{delay:0}, //자동재생
+            loop:true, //무한반복
+            slidesPerView:2, //한번에 보이는 슬라이드 개수
+            spaceBetween:0, //슬라이드 간 간격
+            speed:5000,
+            scrollbar: {
+                el: ".part5_pdt_slide .swiper-scrollbar",
+                hide: false,
+            },
+        });
         /* part7_slide */
         var part7_slide = new Swiper('.part7_slide', {
             autoplay:{delay:0}, //자동재생

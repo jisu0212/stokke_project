@@ -1,0 +1,150 @@
+header {
+    display:flex; justify-content: space-between; align-items: center;
+    padding:0 260px; height: 80px;
+    position:fixed; top:0; left:0; z-index: 999; width:100%;
+}
+header .tab,
+header .icons {width:500px; z-index: 999;}
+header .tab {}
+header .tab a {margin-right: 40px; color:#fff; font-size: 0.938rem;}
+header .tab a:last-child {margin: 0;}
+header h1 {z-index: 999;}
+header h1 a {}
+header h1 a img {}
+header .icons {text-align: right;}
+header .icons a {margin-right: 20px;}
+header .icons a img {}
+header .menu {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute; top:0; left:0;
+    width:100%; height:500px; z-index: 900;
+    display:none;
+}
+header .menu.on {display:block;}
+header .menu .gnb,
+header .menu .sub {
+    width:1670px; display:flex; justify-content: space-between;
+    align-items: flex-start; margin: 0 auto;
+}
+header .menu .gnb {margin-top: 120px; position:relative; margin-bottom: 30px;}
+header .menu .gnb::after {
+    content: ''; width: 100%; height: 1px; background-color: #292929;
+    display:block; position:absolute; bottom:-15px; 
+}
+header .menu .gnb li,
+header .menu .sub > li ul li {width:170px; text-align: center;}
+header .menu .gnb li a {color:#fff; font-size: 1.125rem;}
+header .tab a:hover,
+header .menu .gnb li a:hover,
+header .menu .sub > li ul li a:hover {color:#f47e22;}
+header .menu .sub {display:flex;}
+header .menu .sub > li {position:relative;}
+header .menu .sub > li::after {
+    content: ''; width:1px; height: 258px; background-color: #1d1d1d;
+    display: block; position: absolute; right:-26px; top:0;
+}
+header .menu .sub > li:last-child::after {display: none;}
+header .menu .sub > li ul {text-align: center;}
+header .menu .sub > li ul li {margin-bottom: 20px;}
+header .menu .sub > li ul li:last-child {margin: 0;}
+header .menu .sub > li ul li a {color:#fff;}
+/* 공통 */
+main {}
+main .part .title {font-size: 1.875rem; line-height: 1.5;}
+main .part2 .vision .text .more a:hover,
+main .part3 .part3_title .info a:hover {font-weight: 600;}
+/* part1 */
+main .part1 {}
+main .part1 video {position:relative; filter: brightness(80%);}
+main .part1 .main_title {position:absolute; top:400px; left:650px; z-index: 900; text-align: center;}
+main .part1 .main_title h2 {
+    font-size: 6.25rem; color:#fff; font-weight: 500;
+}
+main .part1 .main_title p {
+    font-size: 1.125rem; color:#fff; line-height: 1.5; margin-top: 15px;
+}
+/* part2 */
+main .part2 {text-align: center;}
+main .part2 .title {margin:100px 0 40px;}
+main .part2 .vision {display: flex; border-top:1px solid #bebebe; border-bottom:1px solid #bebebe; margin-bottom: 100px;}
+main .part2 .vision:nth-child(3) {justify-content: flex-end;}
+main .part2 .vision p {width:960px;}
+main .part2 .vision p img {width:100%; height:100%;}
+main .part2 .vision .text {
+    text-align: left; padding:50px; width:700px;
+}
+main .part2 .vision .text .big_title {}
+main .part2 .vision .text .big_title::after {
+    content: ''; width:1px; height: 70px; background-color: #bebebe; display:block; margin: 30px 0 30px 80px;
+}
+main .part2 .vision .text .big_title .num {
+    line-height: 1.5; font-weight: 200; font-size: 3.125rem;
+}
+main .part2 .vision .text .big_title h2 {
+    line-height: 1.5; font-weight: 600; font-size: 1.875rem;
+}
+main .part2 .vision .text .contents {}
+main .part2 .vision .text .contents h3 {
+    font-weight: 700; line-height: 1.5; font-size: 1.125rem;
+}
+main .part2 .vision .text .contents p {
+    font-size: 1.125rem; line-height: 1.7; margin-top: 20px;
+    width: 600px;
+}
+main .part2 .vision .text .more {margin:72px auto 0; line-height: 1.7; border-bottom: 1px solid #bebebe; width:90px;}
+main .part2 .vision .text .more a {font-size: 1.125rem;}
+/* part3 */
+main .part3 {width:1400px; margin:0 auto; padding:100px 0;}
+main .part3 .part3_title {}
+main .part3 .part3_title .title {}
+main .part3 .part3_title .info {display:flex; justify-content: space-between; align-items: center; margin-top: 10px;}
+main .part3 .part3_title .info p {font-size: 1.125rem;}
+main .part3 .part3_title .info p span {font-weight: 600;}
+main .part3 .part3_title .info a {font-size: 0.938rem; text-decoration: underline;}
+main .part3 ul {display:flex; width:1400px; flex-flow: row wrap; justify-content: space-between; margin-top: 24px;}
+main .part3 ul li {margin-top: 16px; position: relative;}
+main .part3 ul li p {}
+main .part3 ul li p img {}
+main .part3 ul li .explain {
+    position:absolute; bottom: 20px; color:#fff;
+    width:456px; text-align: center;
+}
+/* part4 */
+main .part4 {padding: 100px 0;}
+main .part4 .title { width:1400px; margin: 0 auto; margin-bottom: 40px;}
+main .part4 .history_slide {}
+main .part4 .history_slide .swiper-wrapper {transition-timing-function: linear;}
+main .part4 .history_slide .swiper-wrapper .swiper-slide img {}
+main .part4 .history_slide .swiper-wrapper .swiper-slide .history_text {
+    padding:30px; width:466px;
+}
+main .part4 .history_slide .swiper-wrapper .swiper-slide .history_text .history_num {font-size: 3.75rem; font-weight: 200; line-height: 1.5; color:#f47e22;}
+main .part4 .history_slide .swiper-wrapper .swiper-slide .history_text .history_num::after {
+    content: ''; width:382px; height:1px; background-color: #9c9c9c;
+    display: block; margin: 105px 0;
+}
+main .part4 .history_slide .swiper-wrapper .swiper-slide .history_text .history_info {}
+main .part4 .history_slide .swiper-wrapper .swiper-slide .history_text .history_info h3 {
+    font-size: 1.688rem; line-height: 1.5; font-weight: 600; margin-bottom: 10px;
+}
+main .part4 .history_slide .swiper-wrapper .swiper-slide .history_text .history_info p {
+    font-size: 1.125rem; line-height: 1.5;
+}
+/* footer */
+footer {background-color: #f4f4f4; padding:80px 260px;}
+footer p {width:149px; margin-bottom: 30px;}
+footer p img {width:100%;}
+footer .detail {display: flex; justify-content: space-between; font-size: 0.938rem;}
+footer .detail .sns {}
+footer .detail .sns a {margin-right: 20px;}
+footer .detail .sns a:last-child {margin: 0;}
+footer .detail .sns a img {}
+footer .detail .company {}
+footer .detail .company dl {}
+footer .detail .company dl:first-child {margin-bottom: 40px;}
+footer .detail .company dl dt {}
+footer .detail .company dl dd {}
+footer .detail dl {width:150px;}
+footer .detail dl dt {margin-bottom: 10px; font-weight: 600;}
+footer .detail dl dd {margin-bottom: 10px;}
+footer .detail dl dd a:hover {font-weight: 600;}

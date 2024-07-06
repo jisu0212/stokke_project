@@ -1,0 +1,127 @@
+header {
+    display:flex; justify-content: space-between; align-items: center;
+    padding:0 260px; height: 80px;
+    position:fixed; top:0; left:0; z-index: 999; width:100%;
+}
+header .tab,
+header .icons {width:500px; z-index: 999;}
+header .tab {}
+header .tab a {margin-right: 40px; color:#fff; font-size: 0.938rem;}
+header .tab a:last-child {margin: 0;}
+header h1 {z-index: 999;}
+header h1 a {}
+header h1 a img {}
+header .icons {text-align: right;}
+header .icons a {margin-right: 20px;}
+header .icons a img {}
+header .menu {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute; top:0; left:0;
+    width:100%; height:550px; z-index: 900;
+    display:none;
+}
+header .menu.on {display:block;}
+header .menu .gnb,
+header .menu .sub {
+    width:1670px; display:flex; justify-content: space-between;
+    align-items: flex-start; margin: 0 auto;
+}
+header .menu .gnb {margin-top: 145px; position:relative; margin-bottom: 30px;}
+header .menu .gnb::after {
+    content: ''; width: 100%; height: 1px; background-color: #292929;
+    display:block; position:absolute; bottom:-15px; 
+}
+header .menu .gnb li,
+header .menu .sub > li ul li {width:170px; text-align: center;}
+header .menu .gnb li a {color:#fff; font-size: 1.125rem;}
+header .tab a:hover,
+header .menu .gnb li a:hover,
+header .menu .sub > li ul li a:hover {color:#f47e22;}
+header .menu .sub {display:flex;}
+header .menu .sub > li {position:relative;}
+header .menu .sub > li::after {
+    content: ''; width:1px; height: 258px; background-color: #1d1d1d;
+    display: block; position: absolute; right:-26px; top:0;
+}
+header .menu .sub > li:last-child::after {display: none;}
+header .menu .sub > li ul {text-align: center;}
+header .menu .sub > li ul li {margin-bottom: 20px;}
+header .menu .sub > li ul li:last-child {margin: 0;}
+header .menu .sub > li ul li a {color:#fff;}
+/* 공통 */
+main {}
+main .part {width:1400px; margin:0 auto;}
+/* part1 */
+main .part1 {
+    background-image: url(../images/pdt_bg_001.jpg); height:548px; display: flex; flex-flow:column nowrap; justify-content: center; padding: 0 260px; width:100%; background-attachment: fixed;
+}
+main .part1 h1 {line-height: 1.7; font-size: 1.875rem; font-weight: 600;}
+main .part1 p {line-height: 2; margin-top: 20px;}
+main .part1 h1, main .part1 p {color:#fff;}
+/* part2 */
+main .part2 {margin:50px auto;}
+main .part2 ul {display: flex; justify-content: space-between; border-bottom: 1px solid #dcdcdc; padding-bottom: 20px;}
+main .part2 ul li {}
+main .part2 ul li a {display:flex; flex-flow:column nowrap; align-items: center;}
+main .part2 ul li a img {}
+main .part2 ul li a span {margin-top: 10px; line-height: 1.7;}
+/* part3 */
+main .part3 {}
+main .part3 .pdt_menu {display:flex; justify-content: space-between;}
+main .part3 .pdt_menu .tab {}
+main .part3 .pdt_menu .tab a {margin-right: 20px;}
+main .part3 .pdt_menu .tab a:last-child {margin: 0;}
+main .part3 .pdt_menu select {border:0; cursor: pointer;}
+main .part3 .pdt_menu select:focus {outline: none;}
+main .part3 .pdt_menu select option {}
+main .part3 .pdt_list {
+    display:flex; justify-content: space-between; flex-flow: row wrap;
+}
+main .part3 .pdt_list a {width:340px; margin-top: 30px;}
+main .part3 .pdt_list a .pdt_img {
+    width:360px; height:360px; background-color: #fff;
+}
+main .part3 .pdt_list a .pdt_img img {width:100%;}
+main .part3 .pdt_list a .pdt_info {
+    background-color: #fff; padding: 20px 30px;
+}
+main .part3 .pdt_list a .pdt_info .color {
+    display:flex; justify-content: space-between;
+}
+main .part3 .pdt_list a .pdt_info .color img {}
+main .part3 .pdt_list a .pdt_info .name {
+    line-height: 1.5; height:62px; margin:20px 0 5px; font-size: 1.125rem;
+}
+main .part3 .pdt_list a .pdt_info .price {
+    line-height: 1.5; font-weight: 700; font-size: 1.25rem;
+}
+main .part3 .pdt_list a .pdt_info .grade {
+    display: flex; margin-top: 5px;
+}
+main .part3 .pdt_list a .pdt_info .grade p {
+    display:flex; font-size: 1.125rem; line-height: 1.7;
+}
+main .part3 .pdt_list a .pdt_info .grade p:first-child {margin-right: 14px;}
+main .part3 .pdt_list a .pdt_info .grade img {margin-right: 5px;}
+main .part3 .page {text-align: center; margin: 80px 0 100px;}
+main .part3 .page span {font-size: 1.125rem;}
+main .part3 .page span:first-child {margin-right: 30px;}
+main .part3 .page span a {}
+/* footer */
+footer {background-color: #f4f4f4; padding:80px 260px;}
+footer p {width:149px; margin-bottom: 30px;}
+footer p img {width:100%;}
+footer .detail {display: flex; justify-content: space-between; font-size: 0.938rem;}
+footer .detail .sns {}
+footer .detail .sns a {margin-right: 20px;}
+footer .detail .sns a:last-child {margin: 0;}
+footer .detail .sns a img {}
+footer .detail .company {}
+footer .detail .company dl {}
+footer .detail .company dl:first-child {margin-bottom: 40px;}
+footer .detail .company dl dt {}
+footer .detail .company dl dd {}
+footer .detail dl {width:150px;}
+footer .detail dl dt {margin-bottom: 10px; font-weight: 600;}
+footer .detail dl dd {margin-bottom: 10px;}
+footer .detail dl dd a:hover {font-weight: 600;}
