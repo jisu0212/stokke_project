@@ -63,8 +63,10 @@ main .part2 {margin:50px auto;}
 main .part2 ul {display: flex; justify-content: space-between; border-bottom: 1px solid #dcdcdc; padding-bottom: 20px;}
 main .part2 ul li {}
 main .part2 ul li a {display:flex; flex-flow:column nowrap; align-items: center;}
-main .part2 ul li a img {}
+main .part2 ul li:first-child a img {border:1px solid #dcdcdc;}
+main .part2 ul li a img {border-radius: 50%;}
 main .part2 ul li a span {margin-top: 10px; line-height: 1.7;}
+main .part2 ul li:first-child a span {margin-top: 10px; line-height: 1.7; font-weight: 700;}
 /* part3 */
 main .part3 {}
 main .part3 .pdt_menu {display:flex; justify-content: space-between;}
@@ -107,6 +109,7 @@ main .part3 .page {text-align: center; margin: 80px 0 100px;}
 main .part3 .page span {font-size: 1.125rem;}
 main .part3 .page span:first-child {margin-right: 30px;}
 main .part3 .page span a {}
+main .part3 .page span:first-child a {font-weight: 600;}
 /* footer */
 footer {background-color: #f4f4f4; padding:80px 260px;}
 footer p {width:149px; margin-bottom: 30px;}

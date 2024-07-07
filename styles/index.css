@@ -104,6 +104,7 @@ main .part4 .best .part4_menu {
 main .part4 .best .part4_menu .title {}
 main .part4 .best .part4_menu .part4_tab {}
 main .part4 .best .part4_menu .part4_tab a {margin-right: 25px;}
+main .part4 .best .part4_menu .part4_tab a:first-child {text-decoration: underline; font-weight: 600;}
 main .part4 .best .part4_menu .part4_tab a:hover {font-weight: 600;}
 main .part4 .best .part4_menu .part4_tab a:last-child {margin:0;}
 main .part4 .best .part4_contents {display: flex; justify-content: space-between;}
@@ -135,13 +136,29 @@ main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_inf
 main .part4 .best .part4_contents .thumb {
     background-image: url(../images/best_thumb_001.jpg); width:620px; height:620px; display:flex; flex-flow:column nowrap; justify-content: flex-end; padding: 20px 40px; align-items: flex-start;
 }
-main .part4 .best .part4_contents .thumb p {line-height: 1.7; font-size: 1.25rem;}
+main .part4 .best .part4_contents:nth-child(3),
+main .part4 .best .part4_contents:nth-child(4),
+main .part4 .best .part4_contents:nth-child(5),
+main .part4 .best .part4_contents:nth-child(6) {display:none;}
+main .part4 .best .part4_contents:nth-child(3) .thumb {
+    background-image: url(../images/best_thumb_002.jpg);
+}
+main .part4 .best .part4_contents:nth-child(4) .thumb {
+    background-image: url(../images/best_thumb_003.jpg);
+}
+main .part4 .best .part4_contents:nth-child(5) .thumb {
+    background-image: url(../images/best_thumb_004.jpg);
+}
+main .part4 .best .part4_contents:nth-child(6) .thumb {
+    background-image: url(../images/best_thumb_005.jpg);
+}
+main .part4 .best .part4_contents .thumb p {line-height: 1.7; font-size: 1.25rem; color:#fff;}
 main .part4 .best .part4_contents .thumb .thumb_title {display:flex; line-height: 1.7; justify-content: space-between; width:100%; align-items: center;}
 main .part4 .best .part4_contents .thumb .thumb_title h3 {
-    font-size: 3.125rem; font-weight: 700;
+    font-size: 3.125rem; font-weight: 700; color:#fff;
 }
 main .part4 .best .part4_contents .thumb .thumb_title .more_link {
-    border:1px solid #000; line-height: 51px; width:177px;
+    border:1px solid #fff; line-height: 51px; width:177px; color:#fff;
     font-size: 1.25rem; font-weight: 500;
 }
 /* part5 */
