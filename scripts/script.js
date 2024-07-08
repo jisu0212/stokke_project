@@ -4,7 +4,7 @@ product.addEventListener('click', (e)=>{
     e.preventDefault();
     menu.classList.toggle('on')
 })
-/* header */
+/* header-background */
 const head = document.querySelector('header')
 window.addEventListener('scroll',function(){
     if(window.pageYOffset < 100){
@@ -19,7 +19,7 @@ window.addEventListener('scroll',function(){
 //=================================tab
 const categoryBtn = document.querySelectorAll ('.part4_tab a')
 const contents = document.querySelectorAll ('.best .part4_contents')
-for(let i = 0; i<7; i++){
+for(let i = 0; i<5; i++){
     categoryBtn[i].addEventListener('click', function(e){
         e.preventDefault()
         contents[0].style = 'display:none';
@@ -36,3 +36,39 @@ for(let i = 0; i<7; i++){
         categoryBtn[i].style = 'text-decoration: underline; font-weight:600';
     })
 }
+/* color_tab */
+const color_tab = document.querySelectorAll ('.color span')
+const color_img = document.querySelector ('.pdt_img img')
+for(let i of color_tab){
+    i.addEventListener('mouseover',()=>{
+        i.style.border = '3px solid #fff'
+        i.style.boxShadow = '2px 2px 10px #5a5a5a'
+        console.log(i)
+    })
+}
+for(let i of color_tab){
+    i.addEventListener('mouseout',()=>{
+        i.style.border = 'none'
+        i.style.boxShadow = 'none'
+    })
+}
+/* console.log(color_tab[0])
+console.log(color_img)
+color_tab[0].addEventListener('mouseover',()=>{
+    color_img.src = './images/best_pdt_001_black.jpg'
+    color_tab[0].style.border = '3px solid #fff'
+    color_tab[0].style.boxShadow = '2px 2px 10px #5a5a5a'
+})
+color_tab[0].addEventListener('mouseout',()=>{
+    color_tab[0].style.border = 'none'
+    color_tab[0].style.boxShadow = 'none'
+})
+color_tab[1].addEventListener('mouseover',()=>{
+    color_img.src = './images/best_pdt_002_khaki.jpg'
+    color_tab[1].style.border = '3px solid #fff'
+    color_tab[1].style.boxShadow = '2px 2px 10px #5a5a5a'
+})
+color_tab[1].addEventListener('mouseout',()=>{
+    color_tab[1].style.border = 'none'
+    color_tab[1].style.boxShadow = 'none'
+}) */

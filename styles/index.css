@@ -120,7 +120,15 @@ main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info {background-color: #fff; width:360px; padding: 20px 30px;}
 main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color,
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info .color {display:flex; justify-content: space-between;}
-main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color img {}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color span {width:24px; height:24px; border-radius: 50%;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .black {background-color: #2a2a2a;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .khaki {background-color: #92917D;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .sky_blue {background-color: #778F97;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .gray {background-color: #B0B1B4;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .light_brown {background-color: #9B8E7C;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .pink {background-color: #CF8E7F;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .navy {background-color: #3A4458;}
+main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .color .brown {background-color: #8D795E;}
 main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .name,
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info .name {line-height: 1.5; height:62px; margin:20px 0 5px; font-size: 1.125rem;}
 main .part4 .best .part4_contents .part4_slide .swiper-wrapper .swiper-slide a .pdt_info .price,
@@ -172,7 +180,7 @@ main .part5 .part5_slide .swiper-wrapper .swiper-slide a p {
 }
 main .part5 .part5_slide .swiper-wrapper .swiper-slide a p img {}
 main .part5 .part5_slide .swiper-wrapper .swiper-slide a .category {
-    position:absolute; bottom:0; background-color: rgba(0,0,0,0.4); width:100%; padding:50px;
+    position:absolute; bottom:3px; background-color: rgba(0,0,0,0.4); width:100%; padding:50px;
 }
 main .part5 .part5_slide .swiper-wrapper .swiper-slide a .category h2 {
     font-size: 1.875rem; font-weight: 600; line-height: 1.7; color: #fff;
@@ -182,17 +190,19 @@ main .part5 .part5_slide .swiper-wrapper .swiper-slide a .category p {
 }
 main .part5 .part5_slide .swiper-button-next::after,
 main .part5 .part5_slide .swiper-button-prev::after {color:#fff; font-size: 2.75rem;}
-main .part5 .part5_pdt {width:calc(100% - 919px); margin-left: 50px;}
-main .part5 .part5_pdt .part5_title {display: flex; justify-content: space-between; align-items: center; width:741px; margin-bottom: 75px;}
+main .part5 .part5_pdt {width:741px; margin: 0 260px 0 50px;}
+/* width:calc(100% - 919px); */
+main .part5 .part5_pdt .part5_title {display: flex; justify-content: space-between; align-items: center;  margin-bottom: 75px;}
 main .part5 .part5_pdt .part5_title h2 {}
 main .part5 .part5_pdt .part5_title a {text-decoration: underline;}
-main .part5 .part5_pdt .part5_pdt_slide {height:683px;}
+main .part5 .part5_pdt .part5_pdt_slide {height:683px; width:100%;}
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper {}
-main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide {}
+main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide {display: flex; justify-content: space-between;}
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a {}
-main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_img {}
+main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a:first-child {}
+main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_img {border: 1px solid #e4e4e4; border-bottom: none;}
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_img img {}
-main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info {}
+main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info {border: 1px solid #e4e4e4; border-top: none;}
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info .color {}
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info .color img {}
 main .part5 .part5_pdt .part5_pdt_slide .swiper-wrapper .swiper-slide a .pdt_info .name {}

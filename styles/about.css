@@ -54,7 +54,7 @@ main .part .title {font-size: 1.875rem; line-height: 1.5;}
 main .part2 .vision .text .more a:hover,
 main .part3 .part3_title .info a:hover {font-weight: 600;}
 /* part1 */
-main .part1 {}
+main .part1 {height:1000px; overflow:hidden; width:100%;}
 main .part1 video {position:relative; filter: brightness(80%);}
 main .part1 .main_title {position:absolute; top:400px; left:650px; z-index: 900; text-align: center;}
 main .part1 .main_title h2 {
@@ -66,7 +66,7 @@ main .part1 .main_title p {
 /* part2 */
 main .part2 {text-align: center;}
 main .part2 .title {margin:100px 0 40px;}
-main .part2 .vision {display: flex; border-top:1px solid #bebebe; border-bottom:1px solid #bebebe; margin-bottom: 100px;}
+main .part2 .vision {display: flex; border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; margin-bottom: 100px;}
 main .part2 .vision:nth-child(3) {justify-content: flex-end;}
 main .part2 .vision p {width:960px;}
 main .part2 .vision p img {width:100%; height:100%;}

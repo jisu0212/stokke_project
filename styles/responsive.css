@@ -1,0 +1,8 @@
+@media screen and (max-width:1024px) {
+    header {padding: 0 16px;}
+    header .tab a {margin-right: 20px;}
+    header .icons a {margin-right: 10px;}
+    main .part1 .main_title {position:absolute; bottom:91px; left: 16px; z-index: 800;}
+    main .part2 {width: 992px; margin:0 auto;}
+    main .part2 .part2_contents {flex-flow: column nowrap;}
+}

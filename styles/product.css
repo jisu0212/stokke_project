@@ -72,6 +72,7 @@ main .part3 {}
 main .part3 .pdt_menu {display:flex; justify-content: space-between;}
 main .part3 .pdt_menu .tab {}
 main .part3 .pdt_menu .tab a {margin-right: 20px;}
+main .part3 .pdt_menu .tab a:first-child {font-weight: 600;}
 main .part3 .pdt_menu .tab a:last-child {margin: 0;}
 main .part3 .pdt_menu select {border:0; cursor: pointer;}
 main .part3 .pdt_menu select:focus {outline: none;}
