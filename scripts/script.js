@@ -39,11 +39,15 @@ for(let i = 0; i<5; i++){
 /* color_tab */
 const color_tab = document.querySelectorAll ('.color span')
 const color_img = document.querySelector ('.pdt_img img')
+color_tab.forEach((obj, index)=>{
+    obj.addEventListener('mouseover',()=>{
+        color_img.src = `./images/best_pdt_00${index+1}_${obj.className}.jpg`
+    })
+})
 for(let i of color_tab){
     i.addEventListener('mouseover',()=>{
         i.style.border = '3px solid #fff'
         i.style.boxShadow = '2px 2px 10px #5a5a5a'
-        console.log(i)
     })
 }
 for(let i of color_tab){
