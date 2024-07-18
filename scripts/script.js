@@ -56,6 +56,8 @@ for(let i of color_tab){
         i.style.boxShadow = 'none'
     })
 }
+const vid = document.querySelector('.part1 video')
+vid.playbackRate = 0.6;
 /* console.log(color_tab[0])
 console.log(color_img)
 color_tab[0].addEventListener('mouseover',()=>{
